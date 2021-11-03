@@ -164,8 +164,9 @@ if __name__ == '__main__':
     '''
     有待完善
     '''
-    print(str(start_date.day))
-    print(records[nrecord - 1].date[6:])
+    print("月报已经成功生成！请认真核查月报内容，如有错误请手动修改哦")
+    # print(str(start_date.day))
+    # print(records[nrecord - 1].date[6:])
     # print(records[0].content)
     # strlist = records[0].content.split('\n')
     # print(strlist)
