@@ -18,7 +18,7 @@
 
 允许在冒号后面添加内容，修改固定内容会影响数据处理。
 
-![](image/explain1.png)
+![image](image/explain1.png)
 
 （2）2021年度值班工作记录表.xls：实际的范例，也可用于运行脚本浏览月报和周报的结果
 
@@ -35,27 +35,27 @@
 
 1、下载zip到本地后解压会得到一个test-master文件夹
 
-![](image/DownLoad1.png)
+![image](image/DownLoad1.png)
 
 2、可以直接使用2021年度值班工作记录表.xls文件或者将这个文件换成那你自己的值班工作记录表，注意：若使用自己值班工作记录表，先删除2021年度值班工作记录表.xls，再将自己值班工作记录表重命名成2021年度值班工作记录表.xls
 
-![](image/explain2.png)
+![image](image/explain2.png)
 
 3、使用cmd进入test文件夹，生成周报命令 python ./process_week.py  生成月报命令 python ./process_month.py
 
-![](image/e3.png)
+![image](image/e3.png)
 
-![](image/e4.png)
+![image](image/e4.png)
 
-![](image/e5.png)
+![image](image/e5.png)
 
-![](image/e6.png)
+![image](image/e6.png)
 
 4、成功执行后在test文件夹下会生成“周报”和“月报”文件，下图是生成的月报和周报效果截图
 
-![](image/result_month.png)
+![image](image/result_month.png)
 
-![](image/result_week.png)
+![image](image/result_week.png)
 
 # - 已知存在问题
 该脚本只是初稿，已知存在的问题是目前的局限，无伤大雅，并不影响正常的使用，后续可以进行调整和修改。
