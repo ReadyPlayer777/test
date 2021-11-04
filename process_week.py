@@ -34,6 +34,9 @@ if __name__ == '__main__':
     names = excel_file.sheet_names()
     sheet_number = len(names)
 
+    if not os.path.exists('./周报'):  # 判断文件夹是否已经存在
+        os.mkdir('./周报')
+
     # 打开周报模板
     excel_path_ZhouBao = os.path.join(os.getcwd(), 'pattern_week.xlsx')
     wb = openpyxl.load_workbook(excel_path_ZhouBao)
@@ -80,7 +83,7 @@ if __name__ == '__main__':
             sheet['J2'] = str(start_date.year) + '年' + str(start_date.month) + '月' + str(start_date.day) + '日至' + str(
                 end_date.year) + '年' + str(end_date.month) + '月' + str(end_date.day) + '日'
             save_name = '周报初稿' + str(start_date.date()) + '到' + str(end_date.date()) + '.xlsx'
-            wb.save(save_name)
+            wb.save('./周报/' + save_name)
             # 产生完一份周报，重新初始化内容板数据和起止时间
             content = ''
             start_date = parse(records[i + 1].date)
@@ -99,5 +102,3 @@ if __name__ == '__main__':
             end_date.year) + '年' + str(end_date.month) + '月' + str(end_date.day) + '日'
         save_name = '周报初稿' + str(start_date.date()) + '到' + str(end_date.date()) + '.xlsx'
         wb.save(save_name)
-
-    ### 值班记录统计完毕，开始做月报 ###

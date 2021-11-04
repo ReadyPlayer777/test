@@ -36,8 +36,7 @@ if __name__ == '__main__':
     # 创建文件夹来存放结果文件
     if not os.path.exists('./月报'):  # 判断文件夹是否已经存在
         os.mkdir('./月报')
-    if not os.path.exists('./周报'):  # 判断文件夹是否已经存在
-        os.mkdir('./周报')
+
     # 打开周报模板
     '''excel_path_ZhouBao = os.path.join(os.getcwd(), 'pattern_week.xlsx')
     wb = openpyxl.load_workbook(excel_path_ZhouBao)
