@@ -101,4 +101,6 @@ if __name__ == '__main__':
         sheet['J2'] = str(start_date.year) + '年' + str(start_date.month) + '月' + str(start_date.day) + '日至' + str(
             end_date.year) + '年' + str(end_date.month) + '月' + str(end_date.day) + '日'
         save_name = '周报初稿' + str(start_date.date()) + '到' + str(end_date.date()) + '.xlsx'
-        wb.save(save_name)
+        wb.save('./周报/' + save_name)
+
+    print("周报已经成功生成！请认真核查月报内容，如有错误请手动修改哦！！！")
