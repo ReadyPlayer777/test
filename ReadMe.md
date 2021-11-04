@@ -20,7 +20,7 @@
 
 （4）pattern_week.xlsx：生成周报的模板
 
-（5）ReadMe：说明书
+（5）ReadMe：说明书 
 
 # - 使用方法以及环境要求
 （1）环境要求：python环境，要求有环境有xlrd、openpyxl、parse包
